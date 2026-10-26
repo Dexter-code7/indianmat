@@ -1,1 +1,0 @@
-import{e as a}from"./index-Co7HA86w.js";import{a as e}from"./vendor-ETSiClqV.js";const o=void 0,r=async s=>(console.log(o),await e.post(`${o}/login`,{plainText:s},{headers:a()})),i=async s=>(console.log(o),await e.post(`${o}/login-classified-user`,{plainText:s},{headers:a()}));export{i as a,r as l};
