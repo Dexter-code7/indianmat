@@ -19,6 +19,27 @@
   <link data-rh="true" rel="canonical" href="https://www.indiaweddingsmatrimony.com/marathi-dhangar-matrimony-gujarat" />
   <link data-rh="true" rel="alternate" href="https://www.indiaweddingsmatrimony.com/marathi-dhangar-matrimony-gujarat" hreflang="en-IN" />
   <link data-rh="true" rel="alternate" href="https://www.indiaweddingsmatrimony.com/marathi-dhangar-matrimony-gujarat" hreflang="x-default" />
+  <script>
+    (function () {
+      function dedupeCanonical() {
+        var links = document.querySelectorAll('link[rel="canonical"]');
+        if (links.length > 1) {
+          var rh = Array.from(links).filter(function (l) { return l.getAttribute('data-rh') === 'true'; });
+          if (rh.length > 0 && rh.length < links.length) {
+            links.forEach(function (l) { if (l.getAttribute('data-rh') !== 'true') l.remove(); });
+            links = document.querySelectorAll('link[rel="canonical"]');
+          }
+          while (links.length > 1) {
+            links[0].remove();
+            links = document.querySelectorAll('link[rel="canonical"]');
+          }
+        }
+      }
+      if (typeof MutationObserver !== 'undefined' && document.head) {
+        new MutationObserver(dedupeCanonical).observe(document.head, { childList: true, subtree: false });
+      }
+    })();
+  </script>
   <link rel="preload" as="image" href="/NewLogoTwo.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,13 +68,13 @@
     .seo-brand{font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#7a1a35}
     .seo-cta{display:inline-block;margin-top:10px;padding:10px 16px;border-radius:8px;background:#9a2143;color:white!important}
   </style>
-  <script type="module" crossorigin src="/assets/index-CXZE977k.js"></script>
+  <script type="module" crossorigin src="/assets/index-D9mVXotQ.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/react-CSuLSDWO.js">
   <link rel="modulepreload" crossorigin href="/assets/redux-CzkoW_YD.js">
   <link rel="modulepreload" crossorigin href="/assets/ui-D06s91IP.js">
   <link rel="modulepreload" crossorigin href="/assets/vendor-ETSiClqV.js">
   <link rel="stylesheet" crossorigin href="/assets/vendor-BTGsrsBX.css">
-  <link rel="stylesheet" crossorigin href="/assets/index-BK8kgmQK.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-CWoZ3XRO.css">
 </head>
 
 <body>
