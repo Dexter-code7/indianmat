@@ -1,1 +1,0 @@
-import{h as o}from"./index-BbyJ5TgQ.js";import{a as t}from"./vendor-ETSiClqV.js";const s="https://api.theindiaweddings.in/api",e=async a=>(console.log(s),await t.post(`${s}/login`,{plainText:a},{headers:o()})),r=async a=>(console.log(s),await t.post(`${s}/login-classified-user`,{plainText:a},{headers:o()}));export{r as a,e as l};
