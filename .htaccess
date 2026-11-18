@@ -66,6 +66,7 @@
   </FilesMatch>
 
   # Security Headers
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
@@ -76,6 +77,20 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # 301 Redirect old underscore and alias URLs to clean canonical hyphenated URLs
+  RewriteRule ^contact_us/?$ /contact-us/ [R=301,L]
+  RewriteRule ^safe_matrimony/?$ /safe-matrimony/ [R=301,L]
+  RewriteRule ^about_us/?$ /about/ [R=301,L]
+  RewriteRule ^how_we_compare/?$ /how-we-compare/ [R=301,L]
+  RewriteRule ^shorts/?$ /social/ [R=301,L]
+  RewriteRule ^privacy_policy/?$ /privacy-policy/ [R=301,L]
+  RewriteRule ^refund_policy/?$ /refund-policy/ [R=301,L]
+  RewriteRule ^child_safety/?$ /child-safety/ [R=301,L]
+  RewriteRule ^subscription_plan/?$ /subscription-plan/ [R=301,L]
+  RewriteRule ^terms/?$ /terms-and-conditions/ [R=301,L]
+  RewriteRule ^terms_and_conditions/?$ /terms-and-conditions/ [R=301,L]
+  RewriteRule ^success_stories/?$ /success-stories/ [R=301,L]
 
   # Serve existing files and directories directly
   RewriteCond %{REQUEST_FILENAME} -f [OR]
